@@ -1,16 +1,20 @@
 {
-  "name": "mobilepromo",
-  "version": "0.0.0",
+  "name": "mobile-content-service",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node src/index.js",
+    "test:ci": "cross-env NODE_ENV=test jest --ci --reporters=default --detectOpenHandles --coverage --runInBand --reporters=jest-teamcity-reporter --forceExit"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "dotenv": "^7.0.0",
     "express": "~4.16.0",
+    "express-winston": "^3.1.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
-    "pug": "2.0.0-beta11"
+    "pug": "2.0.0-beta11",
+    "winston": "^3.2.1"
   }
 }
