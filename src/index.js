@@ -1,11 +1,5 @@
-#!/usr/bin/env node
-
-/**
- * Module dependencies.
- */
-
-var app = require('./app');
-var http = require('http');
+const app = require('./app');
+const http = require('http');
 const config = require('./config');
 const { logger } = require('./utils/logs');
 
